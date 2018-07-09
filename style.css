@@ -1,19 +1,37 @@
 * {
 	color: white;
 }
-@font-face 
-{
-    font-family: 'capture_itregular';
-    src: url('capture_it-webfont.woff2') format('woff2'),
-         url('capture_it-webfont.woff') format('woff');
+
+@font-face {
+    font-family: 'black_ops_oneregular';
+    src: url('blackopsone-regular-webfont.eot');
+    src: url('blackopsone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('blackopsone-regular-webfont.woff2') format('woff2'),
+         url('blackopsone-regular-webfont.woff') format('woff'),
+         url('blackopsone-regular-webfont.ttf') format('truetype'),
+         url('blackopsone-regular-webfont.svg#black_ops_oneregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'electrolizeregular';
+    src: url('electrolize-regular-webfont.eot');
+    src: url('electrolize-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('electrolize-regular-webfont.woff2') format('woff2'),
+         url('electrolize-regular-webfont.woff') format('woff'),
+         url('electrolize-regular-webfont.ttf') format('truetype'),
+         url('electrolize-regular-webfont.svg#electrolizeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body
 {
     background: url('images/noirefond.jpg');
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'electrolize', Arial, sans-serif;
     color: #181818;
 }
 
@@ -24,7 +42,7 @@ body
 }
 
 {
-    font-family: Dayrom, serif;
+    font-family: 'electrolize', serif;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -58,15 +76,15 @@ header
 
 header h1
 {
-    font-family: 'BallparkWeiner', serif;
-    font-size: 2.5em;
+    font-family: 'electrolize', serif;
+    font-size: 4.5em;
     font-weight: normal;
     margin: 0 0 0 10px;
 }
 
 header h2
 {
-    font-family: Dayrom, serif;
+    font-family: 'electrolize', serif;
     font-size: 1.1em;
     margin-top: 0px;
     font-weight: normal;
@@ -103,7 +121,7 @@ nav a:hover
     margin-top: 15px;
     height: 200px;
     border-radius: 5px;
-    background: url('images/noirebanniere.jpg') no-repeat;
+    background: url('images/bannierecrop.png') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -130,10 +148,10 @@ nav a:hover
     position: absolute;
     right: 5px;
     bottom: 5px;
-    background: url('images/fond_degraderouge.png') repeat-x;
+    background: url('images/bouton.2.png') repeat-x;
     border: 1px solid #760001;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     padding: 3px 8px 0px 8px;
     color: white;
@@ -162,6 +180,12 @@ article
     flex: 3;
 }
 
+article h1
+{
+    font-size: 1.7em;
+    text-align: left;
+}
+
 .ico_categorie
 {
     vertical-align: middle;
@@ -179,7 +203,8 @@ aside
     position: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #706b64;
+    background-color: #808080;
+    opacity: 0.9;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
     padding: 10px;
