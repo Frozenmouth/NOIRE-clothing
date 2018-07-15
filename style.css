@@ -33,6 +33,7 @@ body
     background: url('images/noirefond.jpg');
     font-family: 'electrolize', Arial, sans-serif;
     color: #181818;
+    cursor: url('images/cursor2.png'), auto;
 }
 
 #bloc_page
